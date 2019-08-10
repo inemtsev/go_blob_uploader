@@ -43,7 +43,7 @@ func main() {
 		}
 
 		// push file contents from memory to Azure
-		for _, fName := range files {
+		for _, fName := range fFiles {
 			fmt.Println("Started uploading: ", fName)
 			u, errU := UploadBytesToBlob(m[fName])
 			if errU != nil {
